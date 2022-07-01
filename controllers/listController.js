@@ -20,11 +20,20 @@ const updateTask = async (req, res) => {
 
   await listService.updateTask(id, task, status)
 
-  return res.status(200).json({ message: `Task successfully changed`});
+  return res.status(200).json({ message: 'Task successfully changed'});
+}
+
+const deleteTask = async (req, res) => {
+  const { id } = req.params;
+
+  await listService.deleteTask(id);
+
+  return res.status(204).json({ message: 'Task deleted successfully'})
 }
 
 module.exports = {
   getAll,
   createTask,
   updateTask,
+  deleteTask
 }
