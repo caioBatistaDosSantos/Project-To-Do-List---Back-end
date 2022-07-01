@@ -6,15 +6,16 @@ const getAll = async () => {
   return list;
 };
 
-const createList = async (task, status) => {
+const createTask = async (task, status) => {
   const date = new Date();
   console.log(date)
-  const newTask = await List.create(task, status, date)
-  console.log(newTask)
-  return newTask;
+  // const newTask = await List.create(task, status, date)
+  // console.log(newTask)
+  // return newTask;
+  return 'teste'
 }
 
 module.exports = {
   getAll,
-  createList,
+  createTask,
 }
