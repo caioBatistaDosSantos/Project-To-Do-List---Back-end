@@ -11,7 +11,7 @@ const createTask = async (req, res) => {
 
   const newTask = listService.createTask(task, status);
 
-  return res.status(204).json(newTask);
+  return res.status(201).json(newTask);
 }
 
 module.exports = {
