@@ -1,7 +1,9 @@
 const { List } = require('../models');
 
 const getAll = async () => {
-  const list = await List.findAll();
+  // console.log(typeof List)
+  const list = await List.findOne({ where: { id:1 }});
+  // const list = 'qualuqer cisa'
 
   return list;
 };
