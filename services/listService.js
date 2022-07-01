@@ -21,6 +21,12 @@ const updateTask = async (id, task, status) => {
   )
 }
 
+const deleteTask = async (id) => {
+  await List.destroy(
+    { where: { id } },
+  );
+}
+
 module.exports = {
   getAll,
   createTask,
