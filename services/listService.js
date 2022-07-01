@@ -14,7 +14,18 @@ const createTask = async (task, status) => {
   return newTask;
 }
 
+const updateTask = async (id, task, status) => {
+  const updatedTask = await List.update(
+    { task_list: task, status },
+    { where: { id } },
+  )
+
+  return updatedTask;
+}
+
 module.exports = {
   getAll,
   createTask,
+  updateTask,
+  updateTask,
 }
