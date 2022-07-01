@@ -10,4 +10,6 @@ router.post('/list', validateTask, listController.createTask);
 
 router.put('/list/:id', validateTask, listController.updateTask);
 
+router.delete('/list/:id', listController.deleteTask);
+
 module.exports = router;

@@ -28,7 +28,7 @@ const deleteTask = async (req, res) => {
 
   await listService.deleteTask(id);
 
-  return res.status(204).json({ message: 'Task deleted successfully'})
+  return res.status(200).json({ message: 'Task deleted successfully'})
 }
 
 module.exports = {
