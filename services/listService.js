@@ -8,11 +8,10 @@ const getAll = async () => {
 
 const createTask = async (task, status) => {
   const date = new Date();
-  console.log(date)
-  // const newTask = await List.create(task, status, date)
-  // console.log(newTask)
-  // return newTask;
-  return 'teste'
+
+  const newTask = await List.create({ task_list: task, status, date })
+
+  return newTask;
 }
 
 module.exports = {
