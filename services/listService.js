@@ -15,12 +15,10 @@ const createTask = async (task, status) => {
 }
 
 const updateTask = async (id, task, status) => {
-  const updatedTask = await List.update(
+  await List.update(
     { task_list: task, status },
     { where: { id } },
   )
-
-  return updatedTask;
 }
 
 module.exports = {

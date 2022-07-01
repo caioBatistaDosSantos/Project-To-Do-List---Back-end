@@ -8,4 +8,6 @@ router.get('/list', listController.getAll);
 
 router.post('/list', validateTask, listController.createTask);
 
+router.put('/list/:id', validateTask, listController.updateTask);
+
 module.exports = router;

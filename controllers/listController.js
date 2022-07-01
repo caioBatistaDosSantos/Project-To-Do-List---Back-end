@@ -18,12 +18,13 @@ const updateTask = async (req, res) => {
   const { task, status } = req.body;
   const { id } = req.params;
 
-  const updatedTask = await listService.updateTask(id, task, status)
+  await listService.updateTask(id, task, status)
 
-  return res.status(200).json(updatedTask);
+  return res.status(200).json({ message: `Task successfully changed`});
 }
 
 module.exports = {
   getAll,
   createTask,
+  updateTask,
 }
