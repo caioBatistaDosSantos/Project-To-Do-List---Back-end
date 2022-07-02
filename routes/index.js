@@ -4,6 +4,9 @@ const validateTask = require('../middlewares/validateTask');
 
 const router = express.Router();
 
+// Route for test deploy
+router.get('/', (_req, res) => res.status(200).json({ message: 'test with secusse' }));
+
 router.get('/list', listController.getAll);
 
 router.post('/list', validateTask, listController.createTask);
