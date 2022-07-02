@@ -8,6 +8,6 @@ RUN npm install
 
 COPY . .
 
-RUN npm run prestart
+# RUN npm run prestart
 
 CMD ["node", "server.js"]
