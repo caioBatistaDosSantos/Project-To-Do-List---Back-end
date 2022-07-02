@@ -3,15 +3,15 @@ module.exports = (sequelize, DataTypes) => {
     id: {
       type: DataTypes.INTEGER,
       primaryKey: true,
-      autoIncrement: true
+      autoIncrement: true,
     },
     task_list: {
       type: DataTypes.STRING,
-      allowNull: false
+      allowNull: false,
     },
     status: {
       type: DataTypes.STRING,
-      allowNull: false
+      allowNull: false,
     },
     date: {
       type: DataTypes.DATE,
@@ -23,4 +23,4 @@ module.exports = (sequelize, DataTypes) => {
   });
 
   return List;
-} 
+};

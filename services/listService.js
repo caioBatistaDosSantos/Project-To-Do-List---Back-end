@@ -9,28 +9,27 @@ const getAll = async () => {
 const createTask = async (task, status) => {
   const date = new Date();
 
-  const newTask = await List.create({ task_list: task, status, date })
+  const newTask = await List.create({ task_list: task, status, date });
 
   return newTask;
-}
+};
 
 const updateTask = async (id, task, status) => {
   await List.update(
     { task_list: task, status },
     { where: { id } },
-  )
-}
+  );
+};
 
 const deleteTask = async (id) => {
   await List.destroy(
     { where: { id } },
   );
-}
+};
 
 module.exports = {
   getAll,
   createTask,
   updateTask,
-  updateTask,
   deleteTask,
-}
+};
