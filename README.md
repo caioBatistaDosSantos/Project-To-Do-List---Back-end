@@ -5,7 +5,7 @@ Com uma arquitetura de camadas MSC (model, service e controller), um banco de da
 
 ## Como rodar...
   
-  ## Localmente:
+  => Localmente:
   ---
     Para rodar este projeto localmente você vai precisar ter instalado o Docker, GitHub e o Node e basta seguir o passo a passo abaixo.
     1. Clone o repositório com o comando:
@@ -21,10 +21,10 @@ Com uma arquitetura de camadas MSC (model, service e controller), um banco de da
     5. Por fim inicie a aplicação com o comando:
     - `npm start`
   
-  ## Deploy:
+  => Deploy:
   ---
     Se preferir, essa aplicação tambem esta online por um deploy feito no Heroku:
-    - `https://to-do-list-back-dev-caio.herokuapp.com`
+    - https://to-do-list-back-dev-caio.herokuapp.com
     
  ## Sobre as Rotas
  
