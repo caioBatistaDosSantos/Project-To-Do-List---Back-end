@@ -59,7 +59,7 @@ Com uma arquitetura de camadas MSC (model, service e controller), um banco de da
     - Docker
     - Sequelize (para criar e gerenciar o banco)
     - Mysql (banco de dados)
-    - Joi (para validar as informacoes recebidas)
+    - Joi (para validar as regras de negócio)
     - Eslint (para um codigo mais limpo)
     - Jest, Mocha, Chai e Sinon (testes)
  
