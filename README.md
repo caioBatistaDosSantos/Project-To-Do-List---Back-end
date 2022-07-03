@@ -7,7 +7,7 @@ Com uma arquitetura de camadas MSC (model, service e controller), um banco de da
   
   => Localmente:
   ---
-    Para rodar este projeto localmente você vai precisar ter instalado o Docker, GitHub e o Node e basta seguir o passo a passo abaixo.
+    Para rodar este projeto localmente você vai precisar ter instalado o Docker, GitHub, Node e um gerenciador de banco de dados, e basta seguir o passo a passo abaixo.
     1. Clone o repositório com o comando:
     - `git clone git@github.com:caioBatistaDosSantos/Project-To-Do-List---Back-end.git`;
     - Entre na pasta do repositório:
@@ -18,12 +18,16 @@ Com uma arquitetura de camadas MSC (model, service e controller), um banco de da
     - `docker-compose up -d` (este comando inicializará um container com a API back chamada: <strong>to_do_back</strong> e o banco de dados <strong>to_do_db</strong>)
     4. Entre no container para subir a aplicação com o comando:
     - `docker exec -it to_do_back bash`
-    5. Por fim inicie a aplicação com o comando:
-    - `npm start`
+    5. Se conecte a um gerenciador de banco de dados (ex: mysql workbench), seguindo a informações de usuario, senha, host e porta do docker-compose.
+    6. Suba o banco de dados com o comando:
+    - `npm run prestart` (este comando deve ser realizado dentro do terminal criado pelo docker-compose; irá criar o banco de dados e tabelas).
+    7. Por fim inicie a aplicação com o comando:
+    - `npm start` (este comando tambem deve ser realizado dentro do terminal criado pelo docker-compose)
   
   => Deploy:
   ---
     Se preferir, essa aplicação tambem esta online por um deploy feito no Heroku: https://to-do-list-back-dev-caio.herokuapp.com
+    - Obs: a aplicação fornece apenas alnguns logs a cada hora, devido utilizar um banco de dados online.
     
  ## Sobre as Rotas
  
