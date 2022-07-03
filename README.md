@@ -24,7 +24,7 @@ Com uma arquitetura de camadas MSC (model, service e controller), um banco de da
   => Deploy:
   ---
     Se preferir, essa aplicação tambem esta online por um deploy feito no Heroku:
-    - https://to-do-list-back-dev-caio.herokuapp.com
+      https://to-do-list-back-dev-caio.herokuapp.com
     
  ## Sobre as Rotas
  
