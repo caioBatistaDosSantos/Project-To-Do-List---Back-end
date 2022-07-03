@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/caioBatistaDosSantos/Project-To-Do-List---Back-end#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^16.0.1",
     "eslint-config-trybe-backend": "^1.0.4",
     "express": "^4.18.1",
