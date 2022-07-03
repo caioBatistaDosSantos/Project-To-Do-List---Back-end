@@ -56,6 +56,7 @@ Com uma arquitetura de camadas MSC (model, service e controller), um banco de da
     Para este projeto utilizei:
     - Node
     - Express
+    - Docker
     - Sequelize (para criar e gerenciar o banco)
     - Mysql (banco de dados)
     - Joi (para validar as informacoes recebidas)
