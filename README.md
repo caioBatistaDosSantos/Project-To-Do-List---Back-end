@@ -1,6 +1,6 @@
 # Boas Vindas ao Project-To-Do-List---Back-end
 
-Este Projeto foi criado com o intuito de fornecer um back-end ao projeto: (link do projet front)
+Este Projeto foi criado com o intuito de fornecer um back-end ao projeto: https://github.com/caioBatistaDosSantos/Project-To-Do-List---Front-end
 Com uma arquitetura de camadas MSC (model, service e controller), um banco de dados relacional Mysql e com rotas para fazer um CRUD de uma lista de tarefas, e tambem com uma cobertura de testes com Jest, Mocha e Chai
 
 ## Como rodar...
@@ -26,7 +26,7 @@ Com uma arquitetura de camadas MSC (model, service e controller), um banco de da
   
   => Deploy:
   ---
-    Se preferir, essa aplicação tambem esta online por um deploy feito no Heroku: https://to-do-list-back-dev-caio.herokuapp.com
+    Se preferir, essa aplicação tambem está online por um deploy feito no Heroku: https://to-do-list-back-dev-caio.herokuapp.com
     - Obs: a aplicação fornece apenas alnguns logs a cada hora, devido utilizar um banco de dados online.
     
  ## Sobre as Rotas
@@ -34,25 +34,17 @@ Com uma arquitetura de camadas MSC (model, service e controller), um banco de da
  Este projeto contêm 4 rotas para realizar o CRUD completo do banco, sendo elas:
  
    ---
-   
    1. Rota GET "/list": lista todas as tarefas do banco
-   
    ---
-   
    2. Rota POST "/list": cria uma nova tarefa e adiciona ao banco.
      - Essa rota precisa de um objeto com as chaves "task" (string e minimo de 10 caracteres) e "status" (string e minimo de 5 caracteres)
-   
    ---
-   
    3. Rota PUT "/list/:id": altera a tarefa pelo id disponibilizado na rota.
      - Essa rota, como a POST, precisa de um objeto com as chaves "task" (string e minimo de 10 caracteres) e "status" (string e minimo de 5 caracteres), alem do id da tarefa a ser alterada na rota.
      - Exemplo "/list/1": irá alterar a tarefa com o id igual a 1.
-   
    ---
-   
    4. Rota DELETE "/list/:id": deleta a tarefa pelo id disponibilizado na rota.
      - Exemplo "/list/1": irá deletar a tarefa com o id igual a 1.
-   
    ---
 
  
